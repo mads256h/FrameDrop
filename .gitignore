@@ -35,6 +35,7 @@ InspectorExpandedItems.asset
 MonoManager.asset
 NetworkManager.asset
 ScriptMapper
+ShaderCache.db
 
 # Anti Os fuckup
 #  Mac os (Sucks)
