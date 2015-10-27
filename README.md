@@ -1,4 +1,4 @@
-﻿#Læs dette
+﻿#Alle som arbejder på dette project læs dette
 
 Vi arbejder kun med Microsfot Visual Studio 2015 Community Edition og den nyeste version af Unity
 
