@@ -307,3 +307,7 @@ Cmd: compileSnippet
   api=4 type=1 insize=3591 outsize=2728 kw=DIRECTIONAL SHADOWS_OFF pd= ok=1
 Cmd: preprocess
   insize=10598 outsize=2687 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1420 outsize=1379 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1420 outsize=1704 kw= pd= ok=1
