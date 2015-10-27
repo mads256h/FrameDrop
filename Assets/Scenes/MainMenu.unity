@@ -342,6 +342,7 @@ GameObject:
   - 224: {fileID: 1624157143}
   - 222: {fileID: 1624157145}
   - 114: {fileID: 1624157144}
+  - 95: {fileID: 1624157146}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -400,6 +401,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1624157142}
+--- !u!95 &1624157146
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624157142}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 10b541c3b396d9a488b94df2b60187af, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1653750013
 GameObject:
   m_ObjectHideFlags: 0
