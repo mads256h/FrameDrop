@@ -3,13 +3,18 @@ using System.Collections;
 
 public class splashScreen : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public int secoundsToLevelChange = 2;
+    // Use this for initialization
+    void Start()
+    {
+        StartCoroutine(LoadLevel());
+    }
+
+    IEnumerator LoadLevel()
+    {
+        
+        yield return new WaitForSeconds(secoundsToLevelChange);
+        Application.LoadLevel("MainMenu");
+    }
+
 }
