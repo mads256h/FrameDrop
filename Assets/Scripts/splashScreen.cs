@@ -3,18 +3,15 @@ using System.Collections;
 
 public class splashScreen : MonoBehaviour {
 
-    public int secoundsToLevelChange = 2;
-    // Use this for initialization
     void Start()
     {
-        StartCoroutine(LoadLevel());
+        StartCoroutine(Example());
     }
 
-    IEnumerator LoadLevel()
+    IEnumerator Example()
     {
         
-        yield return new WaitForSeconds(secoundsToLevelChange);
+        yield return new WaitForSeconds(2);
         Application.LoadLevel("MainMenu");
     }
-
 }
