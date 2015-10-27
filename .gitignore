@@ -34,3 +34,17 @@ InspectorExpandedItems.asset
 MonoManager.asset
 NetworkManager.asset
 ScriptMapper
+
+# Anti Os fuckup
+#  Mac os (Sucks)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+#  Windows os (Suck a little less)
+ehthumbs.db
+Thumbs.db
+*.ink
+desktop.ini
