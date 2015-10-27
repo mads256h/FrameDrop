@@ -1,0 +1,15 @@
+Lær Git (Git Hub) (Get gud at git)
+* https://www.atlassian.com/git/tutorials
+
+Lær C# (Programmerings sprog)
+* https://msdn.microsoft.com/da-dk/library/aa288436(v=vs.71).aspx
+
+Lær Unity (Det vi arbejder med)
+* https://unity3d.com/learn/tutorials
+
+
+Få nyeste version af Unity
+* https://unity3d.com
+
+Få nyeste version af Github
+* https://desktop.github.com/
