@@ -12,6 +12,7 @@
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+[Ll]ibrary/
 x64/
 x86/
 build/
@@ -229,3 +230,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+#Unity Shit
+*.info
