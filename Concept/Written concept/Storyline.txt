@@ -6,20 +6,8 @@ walk tutorial
 press a button to go left! TRY IT NOW!(insert hole to the left side)
 when the stupid player finaly goes rigth say: (insert banter here)
 jump tutorial
-shoot tutorial
 
-Level 1 (infenet fps)
-level 2 (144 fps)
-level 3 (60fps)
-level 4 (50 fps)
-level 5 (40 fps)
-level 6 (30 fps)
-level 7 (25 fps)
-level 8 (20 fps)
-level 9 (15 fps)
-level 10 (fps)
 
-enemise (speel much many waw)
-volve 
-Eletronic Assholes
-joobisaft
+shooting tutorial
+
+
