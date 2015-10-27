@@ -67,7 +67,21 @@ Temporary Items
 .apdisk
 
 #  Windows os (Suck a little less)
-ehthumbs.db
+# Windows image file caches
 Thumbs.db
-*.ink
-desktop.ini
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
