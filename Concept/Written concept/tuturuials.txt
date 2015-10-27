@@ -1,0 +1,6 @@
+walk tutorial
+press a button to go left! TRY IT NOW!(insert hole to the left side)
+when the stupid player finaly goes rigth say: (insert banter here)
+jump tutorial
+shooting tutorial
+
