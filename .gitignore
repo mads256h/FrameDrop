@@ -36,6 +36,7 @@ MonoManager.asset
 NetworkManager.asset
 ScriptMapper
 ShaderCache.db
+CurrentLayout.dwlt
 
 # Anti Os fuckup
 #  Mac os (Sucks)
