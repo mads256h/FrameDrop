@@ -14,4 +14,4 @@ Vi skal ikke have en fil åben flere gange på en gang en person på en fil indt
 
 Hvis du vil lave en shader skal du gå ind i Windows i unity og så gå ind i Shaderforge
 
-Slet ikke .persist filerne de gør sådan at Mapperne bliver i git selvom der ikke er noget i dem. Det er nemmelig mit hemmelige nazi porno.
+Slet ikke .persist filerne de gør sådan at Mapperne bliver i git selvom der ikke er noget i dem.
