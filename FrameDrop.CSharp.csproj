@@ -80,6 +80,8 @@
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Fonts\8-BIT WONDER.TXT" />
+    <None Include="Assets\Fonts\README.TXT" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\Cubemaps.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\CustomLighting.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\LightCone.shader" />
