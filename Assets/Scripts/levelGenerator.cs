@@ -14,6 +14,7 @@ public class levelGenerator : MonoBehaviour {
     // Use this for initialization
     void Start () {
         prefabLength = prefabs.Length;
+        currentX = 5;
         
 	
 	}
