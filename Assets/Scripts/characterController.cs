@@ -7,7 +7,6 @@ public class characterController : MonoBehaviour {
     public int Speed;
     public int jumpSpeed;
     public bool grounded = true;
-	// Use this for initialization
 
     void OnCollisionEnter(Collision collision)
     {
@@ -29,7 +28,7 @@ public class characterController : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Space) && grounded)
                 {
                     rigid.AddForce(transform.up * jumpSpeed);
-                grounded = false;
+                    grounded = false;
                 }
             
             if (Input.GetKeyDown(KeyCode.D))
