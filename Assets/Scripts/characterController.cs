@@ -18,7 +18,7 @@ public class characterController : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void FixedUpdate () {
         if (rigid.velocity.magnitude < Speed)
         {
             if (Input.GetKeyDown(KeyCode.A))
