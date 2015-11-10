@@ -10,15 +10,16 @@ public class keyboardcommands : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	if (Input.GetKey("Jump"))
+	if (Input.GetKey(KeyCode.Space))
     { 
     // inset game start
+        Application.LoadLevel(3);
     }
 
 	
     
-    if (Input.GetKey("Cancel")){
-    Application.quit(); // For some reason this command doesnt work
+    if (Input.GetKey(KeyCode.Escape)){
+    Application.Quit(); // For some reason this command doesnt work
     }
 
     }//End of update
