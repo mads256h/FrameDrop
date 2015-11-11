@@ -1,0 +1,47 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 Ti (ID=0x1380)
+    Vendor:   NVIDIA
+    VRAM:     1993 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.046 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2cd4 -> priority: 1 
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.383488 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 229.
+Total: 0.241517 ms (FindLiveObjects: 0.015074 ms CreateObjectMapping: 0.013150 ms MarkObjects: 0.166143 ms  DeleteObjects: 0.046828 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.809548 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 239.
+Total: 0.221631 ms (FindLiveObjects: 0.024376 ms CreateObjectMapping: 0.018602 ms MarkObjects: 0.111617 ms  DeleteObjects: 0.066713 ms)
+
