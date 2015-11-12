@@ -20,7 +20,7 @@ public class characterController : MonoBehaviour {
     void FixedUpdate () {
         if (rigid.velocity.magnitude < Speed)
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKey(KeyCode.A))
             {
                 rigid.AddForce(-transform.right * Speed);
             }
@@ -31,7 +31,7 @@ public class characterController : MonoBehaviour {
                     grounded = false;
                 }
             
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKey(KeyCode.D))
             {
                 rigid.AddForce(transform.right * Speed);
             }
