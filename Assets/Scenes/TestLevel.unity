@@ -242,6 +242,7 @@ GameObject:
   - 224: {fileID: 771270279}
   - 222: {fileID: 771270278}
   - 114: {fileID: 771270277}
+  - 114: {fileID: 771270280}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -301,6 +302,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -9.69999981}
   m_SizeDelta: {x: 100, y: 67.3000031}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &771270280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 771270276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2751252bde8119343a5dd15da61cb6eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &884142695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,12 +1098,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 69d0b9ee5193a724dba1024d57f6217d, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 771270280}
+        m_MethodName: restartLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1295,12 +1307,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 1822d53aa3cb4fe4fa2e7aa21cabfe4f, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 771270280}
+        m_MethodName: exitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
