@@ -9,7 +9,6 @@ public class levelGenerator : MonoBehaviour {
     public int currentPieces = 0;
     int prefabLength = 0;
     int rndValue;
-    Random rnd = new Random();
 
     // Use this for initialization
     void Start () {
