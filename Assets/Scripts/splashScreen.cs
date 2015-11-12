@@ -2,16 +2,31 @@
 using System.Collections;
 
 public class splashScreen : MonoBehaviour {
+    public AudioSource audioSource;
+    public float waitSecounds = 2;
+    public float waitChangelevel = 3;
 
+
+    //The script starts here
     void Start()
     {
-        StartCoroutine(Example());
+        // Call the function "playSound" after the amount of secounds specified by "waitSecounds"
+        Invoke("playSound", waitSecounds);
+
+        // Call the function "changeLevel" after the amount of secounds specified by "waitChangelevel"
+        Invoke("changeLevel", waitChangelevel );
+        
     }
 
-    IEnumerator Example()
+    void playSound()
     {
-        
-        yield return new WaitForSeconds(2);
+        // Play the sound in the audioSource
+        audioSource.Play();
+    }
+
+    void changeLevel()
+    {
+        // Change the level to "MainMenu"
         Application.LoadLevel("MainMenu");
     }
 }
