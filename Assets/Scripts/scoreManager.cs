@@ -25,14 +25,19 @@ public class scoreManager : MonoBehaviour {
         if (currentX > maxX)
         {
             maxX = currentX;
-            score = Mathf.Round(maxX * 1000f) / 9000f; // * 1000f;
+            // Viser scoren som et decimal tal for derefter at gange det op bagefter
+            score = Mathf.Round(maxX * 1000f) / 1000f * 1000f;
+            // Sætter en score som en intenger i en ny variabel
             scoreInt = (int)score;
+            // Sætter scoren på HUD'en til scoren
             scoreText.text = scoreInt.ToString();
+            // Sætter scoren på HUD'en når du dør
             dieScore.text = "Your score: " + score.ToString();
 
-            fps = (144 - (scoreInt));
+            //Sætter fps'en til ens maxX istedet for score (vi skal holde de to ting seperat)
+            fps = (144 - ((int)maxX));
             Application.targetFrameRate = fps;
-            Debug.Log(fps);
+            Debug.Log(fps.ToString());
         }
 
     }

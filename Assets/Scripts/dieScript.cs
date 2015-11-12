@@ -6,7 +6,7 @@ public class dieScript : MonoBehaviour {
     public Transform player;
     public Animator anim;
     public GameObject panel;
-    bool isActivated = false;
+    public static bool isActivated = false;
     public static bool Activate = false;
 	
 	// Update is called once per frame
@@ -16,6 +16,7 @@ public class dieScript : MonoBehaviour {
             panel.SetActive(true);
             anim.SetTrigger("Die");
             isActivated = true;
+            Activate = false;
             Time.timeScale = 0;
             
             

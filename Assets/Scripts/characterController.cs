@@ -27,11 +27,11 @@ public class characterController : MonoBehaviour {
         }
     }
 
-    void FixedUpdate()
+    void Update()
     {
         // Store the input axes.
         float h = Input.GetAxisRaw("Horizontal");
-        bool v = Input.GetKeyDown(KeyCode.Space);
+        bool v = Input.GetKey(KeyCode.Space);
 
         // Move the player around the scene.
 

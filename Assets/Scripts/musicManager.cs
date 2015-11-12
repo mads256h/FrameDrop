@@ -9,7 +9,6 @@ public class musicManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         playNextSong();
-        DontDestroyOnLoad(this.gameObject);
 	}
 	
 	// Play next song
