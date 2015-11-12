@@ -1,0 +1,30 @@
+Mono path[0] = 'Z:/hentai/FrameDrop/FrameDrop_Data/Managed'
+Mono path[1] = 'Z:/hentai/FrameDrop/FrameDrop_Data/Mono'
+Mono config path = 'Z:/hentai/FrameDrop/FrameDrop_Data/Mono/etc'
+PlayerConnection initialized from Z:/hentai/FrameDrop/FrameDrop_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55250
+Multi-casting "[IP] 192.168.0.122 [Port] 55250 [Flags] 2 [Guid] 1855078221 [EditorId] 3962008462 [Version] 1048832 [Id] WindowsPlayer(MEDION1) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.122:55250]
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 Ti (ID=0x1380)
+    Vendor:   NVIDIA
+    VRAM:     1993 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading Z:\hentai\FrameDrop\FrameDrop_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: Z:\hentai\FrameDrop\FrameDrop_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.052 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
