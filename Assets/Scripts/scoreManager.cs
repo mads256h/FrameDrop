@@ -22,8 +22,10 @@ public class scoreManager : MonoBehaviour {
     void FixedUpdate() {
         currentX = player.position.x;
 
+        // Hvis currentX er større end MaxX skal vi køre koden neden under
         if (currentX > maxX)
         {
+            // Vi starter med at sætte maxX til CurrentX
             maxX = currentX;
             // Viser scoren som et decimal tal for derefter at gange det op bagefter
             score = Mathf.Round(maxX * 1000f) / 1000f * 1000f;
