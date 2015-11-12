@@ -593,6 +593,7 @@ MonoBehaviour:
   - {fileID: 456356, guid: 5f85332a373f75949a8b880de8f75695, type: 2}
   - {fileID: 439464, guid: f1f9e9b26b4618a4d9a69a4e812ff809, type: 2}
   - {fileID: 402754, guid: 504238f4e096d434a882bf0d7d2f06f1, type: 2}
+  - {fileID: 437962, guid: daa70f776804aab45a62b4da25e80d76, type: 2}
   currentX: 0
   NumberOfPieces: 500
   currentPieces: 0
@@ -805,7 +806,6 @@ GameObject:
   - 222: {fileID: 1359428220}
   - 114: {fileID: 1359428219}
   - 114: {fileID: 1359428221}
-  - 114: {fileID: 1359428222}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -885,17 +885,6 @@ MonoBehaviour:
   score: 0
   scoreInt: 0
   fps: 0
---- !u!114 &1359428222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1359428217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64ef90df1ffb013499f29b9f2eed6622, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1374178187
 GameObject:
   m_ObjectHideFlags: 0

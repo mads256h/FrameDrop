@@ -19,6 +19,14 @@ public class characterController : MonoBehaviour {
         }
     }
 
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Death")
+        {
+            dieScript.Activate = true;
+        }
+    }
+
     void FixedUpdate()
     {
         // Store the input axes.

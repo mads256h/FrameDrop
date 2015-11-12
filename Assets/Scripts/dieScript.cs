@@ -7,10 +7,11 @@ public class dieScript : MonoBehaviour {
     public Animator anim;
     public GameObject panel;
     bool isActivated = false;
+    public static bool Activate = false;
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        if (player.position.y <= -3 && !isActivated)
+        if (player.position.y <= -3 && !isActivated || Activate)
         {
             panel.SetActive(true);
             anim.SetTrigger("Die");
