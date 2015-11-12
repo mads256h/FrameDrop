@@ -20,6 +20,8 @@ public class scoreManager : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate() {
+
+        // Sætter currentX til spiller positionen
         currentX = player.position.x;
 
         // Hvis currentX er større end MaxX skal vi køre koden neden under
@@ -38,7 +40,9 @@ public class scoreManager : MonoBehaviour {
 
             //Sætter fps'en til ens maxX istedet for score (vi skal holde de to ting seperat)
             fps = (144 - ((int)maxX));
+            //Sætter fps'en til unity engine fps
             Application.targetFrameRate = fps;
+            //Logs the fps to console
             Debug.Log(fps.ToString());
         }
 
