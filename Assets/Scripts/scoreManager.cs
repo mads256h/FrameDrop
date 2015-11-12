@@ -32,7 +32,7 @@ public class scoreManager : MonoBehaviour {
             // Sætter scoren på HUD'en til scoren
             scoreText.text = scoreInt.ToString();
             // Sætter scoren på HUD'en når du dør
-            dieScore.text = "Your score: " + score.ToString();
+            dieScore.text = "Your score: " + scoreInt.ToString();
 
             //Sætter fps'en til ens maxX istedet for score (vi skal holde de to ting seperat)
             fps = (144 - ((int)maxX));
