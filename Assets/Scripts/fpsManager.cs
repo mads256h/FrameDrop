@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class fpsManager : MonoBehaviour {
 
-    public Camera mainCamera;
+    public Text fpsText;
 
     public int startingFps = 300;
 
@@ -11,6 +12,9 @@ public class fpsManager : MonoBehaviour {
     public int lagSpikeDuration = 5;
 
     bool lagSpike = false;
+    double deltaTime = 0.0f;
+    double fps = 0.0f;
+    int times = 0;
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -39,6 +43,22 @@ public class fpsManager : MonoBehaviour {
             Application.targetFrameRate = Random.Range(1, 5);
         }
 	}
+
+    void Update()
+    {
+        times += 1;
+        if (times >= 4)
+        {
+            
+            deltaTime += Time.deltaTime;
+            deltaTime /= 2.0;
+            fps = 1.0 / deltaTime;
+            fps = (int)fps;
+
+            fpsText.text = fps.ToString();
+            times = 0;
+        }
+    }
 
     void lagSpikeSet ()
     {
