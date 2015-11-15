@@ -556,7 +556,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: .100000001
+      scalar: .300000012
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -628,7 +628,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 1
-    radius: .188115597
+    radius: .5
     angle: 25
     length: 5
     boxX: 1
@@ -1727,6 +1727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1956017798}
+  particle: {fileID: 786667299}
   anim: {fileID: 1928898918}
   panel: {fileID: 1928898916}
 --- !u!82 &1210583493
@@ -2671,7 +2672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1986541362
 RectTransform:
   m_ObjectHideFlags: 0
