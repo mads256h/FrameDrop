@@ -6,7 +6,7 @@ public class levelGenerator : MonoBehaviour {
     public Transform[] prefabs;
     public float timesPerSecound = 30;
     public int currentX = 5;
-    public int NumberOfPieces = 500;
+    public static int NumberOfPieces = 500;
     int currentPieces = 0;
     float timesSecoundFixed = 0;
 
