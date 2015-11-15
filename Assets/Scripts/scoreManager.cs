@@ -24,10 +24,13 @@ public class scoreManager : MonoBehaviour {
         {
             // Vi starter med at sætte maxX til CurrentX
             maxX = currentX;
+
             // Viser scoren som et decimal tal for derefter at gange det op bagefter
             score = Mathf.Round(maxX * 1000f);
+
             // Sætter scoren på HUD'en til scoren
             scoreText.text = score.ToString();
+
             // Sætter scoren på HUD'en når du dør
             dieScore.text = "Your score: " + score.ToString();
         }
