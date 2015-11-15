@@ -10,6 +10,7 @@ public class characterController : MonoBehaviour {
 
     Vector3 movement;
     Vector3 movementJump;
+    Vector3 dir;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -17,7 +18,9 @@ public class characterController : MonoBehaviour {
         {
             grounded = true;
         }
+
     }
+
 
     void OnTriggerEnter(Collider collider)
     {
