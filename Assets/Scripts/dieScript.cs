@@ -14,18 +14,12 @@ public class dieScript : MonoBehaviour {
     void FixedUpdate() {
         if (player.position.y <= -3 && !isActivated || Activate)
         {
+            panel.SetActive(true);
+            anim.SetTrigger("Die");
             isActivated = true;
             Activate = false;
-            particle.enableEmission = true;
-            Invoke("Die", 5);
+            Time.timeScale = 0;
 
         }
-    }
-
-    void Die ()
-      {
-        panel.SetActive(true);
-        anim.SetTrigger("Die");
-        Time.timeScale = 0;
     }
     }
