@@ -7,10 +7,10 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Main
-  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: ccf893174c7164045b1d2893348e6e64, type: 3}
   m_ShaderKeywords: _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
   m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -20,7 +20,7 @@ Material:
           name: _MainTex
         second:
           m_Texture: {fileID: 2800000, guid: ff2ea25bb13df6d499b4187e1af27192, type: 3}
-          m_Scale: {x: 1, y: .200000003}
+          m_Scale: {x: .5, y: .100000001}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -41,14 +41,14 @@ Material:
           name: _Normal
         second:
           m_Texture: {fileID: 2800000, guid: 721ab7c73518bc24cb4813527ac9e7d1, type: 3}
-          m_Scale: {x: 1, y: 1}
+          m_Scale: {x: .5, y: .100000001}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _Diffuse
         second:
           m_Texture: {fileID: 2800000, guid: ff2ea25bb13df6d499b4187e1af27192, type: 3}
-          m_Scale: {x: 1, y: 1}
+          m_Scale: {x: .5, y: .100000001}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -69,7 +69,7 @@ Material:
           name: _EmissionMap
         second:
           m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: .200000003}
+          m_Scale: {x: .5, y: .100000001}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -111,7 +111,7 @@ Material:
       data:
         first:
           name: _Cutoff
-        second: .5
+        second: .400000006
       data:
         first:
           name: _Parallax
@@ -131,7 +131,7 @@ Material:
       data:
         first:
           name: _OcclusionStrength
-        second: 1
+        second: 0
       data:
         first:
           name: _DetailNormalMapScale
@@ -151,7 +151,7 @@ Material:
       data:
         first:
           name: _OutlineWidth
-        second: .0500000007
+        second: 0
     m_Colors:
       data:
         first:
