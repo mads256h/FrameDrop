@@ -735,13 +735,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2ab513c65d2ae2429e9899a861e380d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
+  camera: {fileID: 1264590552}
   startingFps: 300
   lagSpikeChance: 5000
-  lagSpikeDuration: 5
-  shake: 1
-  shakeAmount: 1
-  cameraPosition: {x: 0, y: 0, z: -10}
+  lagSpikeDuration: 1
 --- !u!1 &1264590548
 GameObject:
   m_ObjectHideFlags: 0
