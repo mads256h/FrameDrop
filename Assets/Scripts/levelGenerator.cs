@@ -7,7 +7,7 @@ public class levelGenerator : MonoBehaviour {
     public float timesPerSecound = 30;
     public int currentX = 5;
     public int NumberOfPieces = 500;
-     int currentPieces = 0;
+    int currentPieces = 0;
     float timesSecoundFixed = 0;
 
     // Use this for initialization

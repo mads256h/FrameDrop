@@ -3,7 +3,7 @@ using System.Collections;
 
 public class fpsManager : MonoBehaviour {
 
-    public Camera camera;
+    public Camera mainCamera;
 
     public int startingFps = 300;
 
