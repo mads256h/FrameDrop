@@ -584,6 +584,7 @@ GameObject:
   - 114: {fileID: 1210583492}
   - 114: {fileID: 1210583494}
   - 82: {fileID: 1210583493}
+  - 114: {fileID: 1210583495}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -723,6 +724,24 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b0f1bba1e59a41744a602aedd41fa8b9, type: 3}
   - {fileID: 8300000, guid: 5641cef032a101840a83a85c03e67a86, type: 3}
   - {fileID: 8300000, guid: 973c3f894b21d414caddae11cc25ef85, type: 3}
+--- !u!114 &1210583495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210583489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ab513c65d2ae2429e9899a861e380d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
+  startingFps: 300
+  lagSpikeChance: 5000
+  lagSpikeDuration: 5
+  shake: 1
+  shakeAmount: 1
+  cameraPosition: {x: 0, y: 0, z: -10}
 --- !u!1 &1264590548
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,9 +915,6 @@ MonoBehaviour:
   player: {fileID: 1956017798}
   scoreText: {fileID: 1359428219}
   dieScore: {fileID: 884142697}
-  score: 0
-  scoreInt: 0
-  fps: 0
 --- !u!1 &1409158642
 GameObject:
   m_ObjectHideFlags: 0
