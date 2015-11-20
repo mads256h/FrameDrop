@@ -11,7 +11,13 @@ public class scoreManager : MonoBehaviour {
     public Text dieScore;
     public static float score = 0;
 
-
+    // Called when loaded
+    void Start()
+    {
+        maxX = 0;
+        currentX = 0;
+        score = 0;
+    }
 
     // Update is called once per frame
     void FixedUpdate() {

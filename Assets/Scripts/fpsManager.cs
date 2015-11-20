@@ -7,9 +7,11 @@ public class fpsManager : MonoBehaviour {
     public Text fpsText;
 
     public int startingFps = 300;
+    public int minimumFps = 5;
 
     public int lagSpikeChance = 5000;
-    public int lagSpikeDuration = 5;
+    public int lagSpikeDurationMin = 5;
+    public int lagSpikeDurationMax = 10;
 
     bool lagSpike = false;
     double deltaTime = 0.0f;
@@ -26,14 +28,14 @@ public class fpsManager : MonoBehaviour {
             lagSpike = true;
 
             // Invoke the function "lagSpikeSet" after "lagSpikeDuration"
-            Invoke("lagSpikeSet", lagSpikeDuration);
+            Invoke("lagSpikeSet", Random.Range(lagSpikeDurationMin, lagSpikeDurationMax));
         }
 
         // Check if targetFramerate is bigger than 1
-        if (Application.targetFrameRate > 1 && !lagSpike)
+        if (Application.targetFrameRate > minimumFps && !lagSpike)
         {
             // Sets the targetFrameRate to 288 - maxX
-            Application.targetFrameRate = (300 - ((int)scoreManager.maxX / 2));
+            Application.targetFrameRate = (300 - (int)(scoreManager.maxX / 4));
         }
 
         // If "lagSpike" is true
