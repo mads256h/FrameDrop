@@ -34,8 +34,8 @@ public class fpsManager : MonoBehaviour {
         // Check if targetFramerate is bigger than 1
         if (Application.targetFrameRate > minimumFps && !lagSpike)
         {
-            // Sets the targetFrameRate to 288 - maxX
-            Application.targetFrameRate = (300 - (int)(scoreManager.maxX / 4));
+            // Sets the targetFrameRate to startingFps - maxX
+            Application.targetFrameRate = (startingFps - (int)(scoreManager.maxX / 4));
         }
 
         // If "lagSpike" is true
