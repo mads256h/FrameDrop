@@ -44,10 +44,10 @@ public class fpsManager : MonoBehaviour {
         }
 	}
 
-	// Update is called 60 times per secound
+	// Update is called every frame
     void Update()
     {
-		// Using this to only call it 15 times per secound
+		// Using this to only call it every fourth time it is being called
         times += 1;
         if (times >= 4)
         {
