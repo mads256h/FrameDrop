@@ -4,11 +4,13 @@ using System.Collections;
 
 public class tutarolManager : MonoBehaviour {
 
-    public Canvas canvas;
+    public GameObject player;
+    public Canvas welcomeCanvas;
     public Text pressToStart;
 
+
     bool pressToStartActivated = false;
-    bool enableControls = false;
+    
 
 	// Use this for initialization
 	void Start () {
@@ -23,10 +25,12 @@ public class tutarolManager : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.Space) && pressToStartActivated)
         {
-            canvas.enabled = false;
-            canvas.gameObject.SetActive(false);
+            welcomeCanvas.enabled = false;
+            welcomeCanvas.gameObject.SetActive(false);
+            pressToStart.enabled = false;
+            pressToStart.gameObject.SetActive(false);
 
-            enableControls = true;
+            player.SetActive(true);
         }
 	
 	}

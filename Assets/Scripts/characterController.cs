@@ -8,6 +8,7 @@ public class characterController : MonoBehaviour {
     public int jumpSpeed;
     public bool grounded = true;
 
+    
     Vector3 movement;
     Vector3 movementJump;
     Vector3 dir;
@@ -32,6 +33,7 @@ public class characterController : MonoBehaviour {
 
     void Update()
     {
+        
         // Store the input axes.
         float h = Input.GetAxisRaw("Horizontal");
         bool v = Input.GetKey(KeyCode.Space);

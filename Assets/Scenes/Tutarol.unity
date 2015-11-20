@@ -374,7 +374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8aa3015b125c14b86fbd424351ceb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  player: {fileID: 1221968844}
+  welcomeCanvas: {fileID: 24910043}
   pressToStart: {fileID: 669047780}
 --- !u!224 &654023907
 RectTransform:
@@ -591,7 +592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!54 &1221968845
 Rigidbody:
   m_ObjectHideFlags: 0
