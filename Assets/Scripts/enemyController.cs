@@ -43,7 +43,7 @@ public class enemyController : MonoBehaviour {
     void Move(float h)
     {
         // if the player is moving under the max speed or going backwards
-        if (enemy.velocity.magnitude < speed / 100 || (h <= -0.5))
+        if (enemy.velocity.magnitude < speed / 100)
         {
 
             // Set the movement vector based on the axis input.
