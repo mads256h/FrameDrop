@@ -1,3 +1,0 @@
-DEM SPIKES AINT FILLIN AN ENTIRE PLATFORM PL0X (AND IF SO DONT MAKE 2 SPIKEY PLATFORMS SPAWN BESIDES EACH OTHER) >:C
-Did you chagne the death thing to use the ScoreInt variable I made?
-Also we should get an IRC chat or somthing :l
