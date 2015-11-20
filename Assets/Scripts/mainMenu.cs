@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class keyboardcommands : MonoBehaviour {
+public class keyboardCommands : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -10,19 +10,22 @@ public class keyboardcommands : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+	// if Space 
 	if (Input.GetKey(KeyCode.Space))
     { 
-    // inset game start
+    // Load level
         Application.LoadLevel(3);
     }
-
 	
-    
+	// if Escape
     if (Input.GetKey(KeyCode.Escape)){
-    Application.Quit(); // For some reason this command doesnt work
+	
+	// Exit application
+    Application.Quit();
     }
 
-    }//End of update
+    }
 
-}// END OF CODE
+}
 	
