@@ -14,6 +14,7 @@ public class scoreManager : MonoBehaviour {
     // Called when loaded
     void Start()
     {
+        // Reset to default values
         maxX = 0;
         currentX = 0;
         score = 0;
