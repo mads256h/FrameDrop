@@ -44,24 +44,37 @@ public class fpsManager : MonoBehaviour {
         }
 	}
 
+	// Update is called 60 times per secound
     void Update()
     {
+		// Using this to only call it 15 times per secound
         times += 1;
         if (times >= 4)
         {
-            
+            // Deltatime is the time between the frames
             deltaTime += Time.deltaTime;
+
+			// Divide the deltaTime in two
             deltaTime /= 2.0;
+
+			// Set the fps to 1 divided by deltaTime
             fps = 1.0 / deltaTime;
+
+			// Set the fps to an intiger
             fps = (int)fps;
 
+			// Set the fps text to the fps
             fpsText.text = fps.ToString();
+
+			// Set the times to 0 to reset it
             times = 0;
         }
     }
 
+	// Lag spike set function
     void lagSpikeSet ()
     {
+		// Set lagSpike to false
         lagSpike = false;
     }
 }
