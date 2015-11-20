@@ -23,7 +23,7 @@ public class tutarolManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKey(KeyCode.Space) && pressToStartActivated)
+        if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Return)) && pressToStartActivated)
         {
             welcomeCanvas.enabled = false;
             welcomeCanvas.gameObject.SetActive(false);
