@@ -10,19 +10,27 @@ public class levelGenerator : MonoBehaviour {
     int currentPieces = 0;
     float timesSecoundFixed = 0;
 
-    // Use this for initialization
 
 	
-	// Update is called once per frame
+	// Fixed update function is called 60 times per secound
 	void FixedUpdate () {
+
+		// Set timesSecoundFixed (Bad naming) to itself plus timesPerSecound
         timesSecoundFixed += (timesPerSecound);
+
+		// If currentPieces is not equal to NumberOfPieces and timesSecoundFixed is higher or equal to 60
         if (!(currentPieces == NumberOfPieces) && timesSecoundFixed >= 60)
         {
+			// Set current pieces one higher
             currentPieces += 1;
 
+			// Make the prefab in the world
             Instantiate(prefabs[Random.Range(0, prefabs.Length)], new Vector3(currentX, 0, 0), Quaternion.identity);
-            currentX += 5;
+            
+			// Set the currentX to itself plus 5
+			currentX += 5;
 
+			// Reset the timesSecoundFixed
             timesSecoundFixed = 0;
 
 
