@@ -50,7 +50,7 @@ public class characterController : MonoBehaviour {
 
     void Move(float h)
     {
-        if (rigid.velocity.magnitude < Speed / 100)
+		if (rigid.velocity.magnitude < Speed / 100 || (h > -0.5))
         {
             // Set the movement vector based on the axis input.
             movement.Set(h, 0f, 0f);
