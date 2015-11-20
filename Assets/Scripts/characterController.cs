@@ -40,7 +40,6 @@ public class characterController : MonoBehaviour {
         bool v = Input.GetKey(KeyCode.Space);
 
         // Move the player around the scene.
-
         Move(h);
 
 		// if v and grounded is true jump
