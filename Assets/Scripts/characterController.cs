@@ -10,9 +10,10 @@ public class characterController : MonoBehaviour {
 
     
     Vector3 movement;
-    Vector3 movementJump;
-    Vector3 dir;
 
+
+
+	// On collision enter if the player is hitting an object set grounded to true
     void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Default"))
@@ -22,7 +23,7 @@ public class characterController : MonoBehaviour {
 
     }
 
-
+	// On trigger enter, used to kill the player on spikes
     void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag == "Death")
@@ -42,16 +43,20 @@ public class characterController : MonoBehaviour {
 
         Move(h);
 
+		// if v and grounded is true jump
         if (v && grounded)
         {
+			// Jump Function
             Jump();
         }
     }
 
     void Move(float h)
     {
+		// if the player is moving under the max speed or going backwards
 		if (rigid.velocity.magnitude < Speed / 100 || (h > -0.5))
         {
+
             // Set the movement vector based on the axis input.
             movement.Set(h, 0f, 0f);
 
@@ -65,7 +70,10 @@ public class characterController : MonoBehaviour {
 
     void Jump()
     {
+		// Add force upwards to the player at the jumpSpeed
         rigid.AddForce(transform.up * jumpSpeed);
+
+		// Set the grounded bool to false
         grounded = false;
     }
 }
