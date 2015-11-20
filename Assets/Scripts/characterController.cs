@@ -32,6 +32,7 @@ public class characterController : MonoBehaviour {
         }
     }
 
+    // Update is called every frame
     void Update()
     {
         
@@ -50,10 +51,11 @@ public class characterController : MonoBehaviour {
         }
     }
 
+    // The move function
     void Move(float h)
     {
 		// if the player is moving under the max speed or going backwards
-		if (rigid.velocity.magnitude < Speed / 100 || (h > -0.5))
+		if (rigid.velocity.magnitude < Speed / 100 || (h <= -0.5))
         {
 
             // Set the movement vector based on the axis input.
@@ -67,6 +69,7 @@ public class characterController : MonoBehaviour {
         }
     }
 
+    // The Jump function
     void Jump()
     {
 		// Add force upwards to the player at the jumpSpeed
