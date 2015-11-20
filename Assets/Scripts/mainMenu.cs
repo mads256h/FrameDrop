@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class keyboardCommands : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
+public class mainMenu : MonoBehaviour {
+	public int minFps = 10;
+	public int maxFps = 30;
 	
 	// Update is called once per frame
 	void Update () {
+
+	// Set the targetFrameRate to Random value between minFps and maxFps
+	Application.targetFrameRate = Random.Range(minFps, maxFps);
 
 	// if Space 
 	if (Input.GetKey(KeyCode.Space))
