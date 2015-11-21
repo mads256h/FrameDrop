@@ -14,7 +14,7 @@ public class dieScript : MonoBehaviour {
     void FixedUpdate() {
 
 		// if the players position is under -3 and is not activated or activate is true
-        if (player.position.y <= -3 && !isActivated || Activate)
+        if (player.position.y <= -4 && !isActivated || Activate)
 		{
 			// Enable the panel
             panel.SetActive(true);
