@@ -38,7 +38,7 @@ public class characterController : MonoBehaviour {
         
         // Store the input axes.
         float h = Input.GetAxisRaw("Horizontal");
-        bool v = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
+        bool v = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetAxisRaw("Jump") >= 0.75;
 
         // Move the player around the scene.
         Move(h);
