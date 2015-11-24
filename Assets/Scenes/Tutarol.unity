@@ -358,7 +358,6 @@ GameObject:
   - 114: {fileID: 654023906}
   - 114: {fileID: 654023909}
   - 82: {fileID: 654023908}
-  - 95: {fileID: 654023910}
   m_Layer: 5
   m_Name: Scripts
   m_TagString: Untagged
@@ -406,8 +405,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: b53d9c68d85b02a48a13cc0f54806ca8, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: .5
   m_Pitch: 1
   Loop: 0
@@ -484,23 +483,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6cc218904e201514a8978fd7935ab5f3, type: 3}
   - {fileID: 8300000, guid: 5641cef032a101840a83a85c03e67a86, type: 3}
   playNext: 1
---- !u!95 &654023910
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 654023905}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ccdabb2b883d8d04ca51dce0245f6492, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  waitSecounds: 2
 --- !u!1 &669047779
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,23 +6,14 @@ public class musicManager : MonoBehaviour {
     public AudioClip[] musicClips;
 
     public bool playNext = false;
+    public int waitSecounds = 0;
     int currentSong = 0;
 
 
 	// Use this for initialization
 	void Start () {
 
-		// if bool playNext is true
-        if (playNext)
-        {
-			//Play nextsong
-            playNextSong();
-        }
-        else
-        {
-			//Instead of random song
-            playRandomSong();
-        }
+        Invoke("StartSound", waitSecounds);
 	}
 	
 	// Play Random song
@@ -60,5 +51,20 @@ public class musicManager : MonoBehaviour {
 		// Invoke the same function after the clip has ended
         Invoke("playNextSong", audioSource.clip.length);
 
+    }
+
+    void StartSound()
+    {
+        // if bool playNext is true
+        if (playNext)
+        {
+            //Play nextsong
+            playNextSong();
+        }
+        else
+        {
+            //Instead of random song
+            playRandomSong();
+        }
     }
 }
