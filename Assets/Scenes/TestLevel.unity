@@ -848,6 +848,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5641cef032a101840a83a85c03e67a86, type: 3}
   - {fileID: 8300000, guid: 973c3f894b21d414caddae11cc25ef85, type: 3}
   playNext: 0
+  waitSecounds: 0
 --- !u!114 &1210583495
 MonoBehaviour:
   m_ObjectHideFlags: 0
