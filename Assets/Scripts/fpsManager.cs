@@ -7,7 +7,7 @@ public class fpsManager : MonoBehaviour {
     public Text fpsText;
 
     public int startingFps = 300;
-    public int minimumFps = 5;
+    public int minimumFps = 3;
 
     public int lagSpikeChance = 5000;
     public int lagSpikeDurationMin = 5;
@@ -18,6 +18,11 @@ public class fpsManager : MonoBehaviour {
     double fps = 0.0f;
     int times = 0;
 	
+
+    void Start ()
+    {
+        Application.targetFrameRate = 300;
+    }
 	// Update is called once per frame
 	void FixedUpdate () {
 
@@ -35,7 +40,7 @@ public class fpsManager : MonoBehaviour {
         if (Application.targetFrameRate > minimumFps && !lagSpike)
         {
             // Sets the targetFrameRate to startingFps - maxX
-            Application.targetFrameRate = (startingFps - (int)(scoreManager.maxX / 4));
+            Application.targetFrameRate = (startingFps - (int)(scoreManager.maxX / 2));
         }
 
         // If "lagSpike" is true
