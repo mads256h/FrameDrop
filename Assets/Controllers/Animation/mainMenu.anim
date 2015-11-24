@@ -19,8 +19,8 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: {x: .5, y: .5, z: .5}
-        inSlope: {x: .350000024, y: .350000024, z: 0}
-        outSlope: {x: .350000024, y: .350000024, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - time: 2
         value: {x: 1.20000005, y: 1.20000005, z: 1.20000005}
@@ -29,8 +29,8 @@ AnimationClip:
         tangentMode: 0
       - time: 4
         value: {x: .5, y: .5, z: .5}
-        inSlope: {x: -.350000024, y: -.350000024, z: 0}
-        outSlope: {x: -.350000024, y: -.350000024, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -98,9 +98,9 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: .5
-        inSlope: .25
-        outSlope: .25
-        tangentMode: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       - time: 2
         value: 1
         inSlope: 0
@@ -108,9 +108,9 @@ AnimationClip:
         tangentMode: 10
       - time: 4
         value: .5
-        inSlope: -.25
-        outSlope: -.25
-        tangentMode: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Color.a
@@ -179,9 +179,9 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: .5
-        inSlope: .350000024
-        outSlope: .350000024
-        tangentMode: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       - time: 2
         value: 1.20000005
         inSlope: 0
@@ -189,9 +189,9 @@ AnimationClip:
         tangentMode: 10
       - time: 4
         value: .5
-        inSlope: -.350000024
-        outSlope: -.350000024
-        tangentMode: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalScale.x
@@ -203,9 +203,9 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: .5
-        inSlope: .350000024
-        outSlope: .350000024
-        tangentMode: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       - time: 2
         value: 1.20000005
         inSlope: 0
@@ -213,9 +213,9 @@ AnimationClip:
         tangentMode: 10
       - time: 4
         value: .5
-        inSlope: -.350000024
-        outSlope: -.350000024
-        tangentMode: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalScale.y
@@ -308,9 +308,9 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: .5
-        inSlope: .25
-        outSlope: .25
-        tangentMode: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       - time: 2
         value: 1
         inSlope: 0
@@ -318,9 +318,9 @@ AnimationClip:
         tangentMode: 10
       - time: 4
         value: .5
-        inSlope: -.25
-        outSlope: -.25
-        tangentMode: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Color.a
