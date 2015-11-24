@@ -23,8 +23,9 @@ public class roadGenerator : MonoBehaviour {
 
 			// Spawn the prefab
             Instantiate(prefab, new Vector3(currentX, -5, 0), Quaternion.identity);
+            Instantiate(prefab, new Vector3(-currentX, -5, 0), Quaternion.identity);
 
-			// Add 5 to currentX
+            // Add 5 to currentX
             currentX += 5;
 
 			// Resey timesSecoundFixed

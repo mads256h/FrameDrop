@@ -26,9 +26,11 @@ public class levelGenerator : MonoBehaviour {
 
 			// Make the prefab in the world
             Instantiate(prefabs[Random.Range(0, prefabs.Length)], new Vector3(currentX, 0, 0), Quaternion.identity);
-            
-			// Set the currentX to itself plus 5
-			currentX += 5;
+
+            Instantiate(prefabs[Random.Range(0, prefabs.Length)], new Vector3(-currentX, 0, 0), Quaternion.identity);
+
+            // Set the currentX to itself plus 5
+            currentX += 5;
 
 			// Reset the timesSecoundFixed
             timesSecoundFixed = 0;

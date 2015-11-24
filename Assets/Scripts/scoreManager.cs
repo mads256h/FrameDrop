@@ -33,7 +33,7 @@ public class scoreManager : MonoBehaviour {
             maxX = currentX;
 
             // Viser scoren som et decimal tal for derefter at gange det op bagefter
-            score = Mathf.Round(maxX * 1000f);
+            score = Mathf.Round(maxX * 1000f) - 2500;
 
             // Sætter scoren på HUD'en til scoren
             scoreText.text = score.ToString();

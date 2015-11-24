@@ -28,7 +28,7 @@ public class fpsManager : MonoBehaviour {
             lagSpike = true;
 
             // Invoke the function "lagSpikeSet" after "lagSpikeDuration"
-            Invoke("lagSpikeSet", Random.Range(lagSpikeDurationMin, lagSpikeDurationMax));
+            Invoke("lagSpikeSet", 5);
         }
 
         // Check if targetFramerate is bigger than 1
