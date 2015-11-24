@@ -8,10 +8,22 @@ public class characterController : MonoBehaviour {
     public int jumpSpeed;
     public bool grounded = true;
 
+    public AudioSource audioSource;
+    public AudioClip clip;
+    public float minPitch = 0.8f;
+    public float maxPitch = 1.2f;
+
     
     Vector3 movement;
+    float timeLeft = 0;
 
 
+    void Start()
+    {
+      audioSource.clip = clip;
+        audioSource.playOnAwake = false;
+
+    }
 
 	// On collision enter if the player is hitting an object set grounded to true
     void OnCollisionEnter(Collision collision)
@@ -35,6 +47,7 @@ public class characterController : MonoBehaviour {
     // Update is called every frame
     void Update()
     {
+        timeLeft += Time.deltaTime;
         
         // Store the input axes.
         float h = Input.GetAxisRaw("Horizontal");
@@ -42,6 +55,10 @@ public class characterController : MonoBehaviour {
 
         // Move the player around the scene.
         Move(h);
+
+        // Make footstep sounds
+
+        footStep();
 
 		// if v and grounded is true jump
         if (v && grounded)
@@ -77,5 +94,15 @@ public class characterController : MonoBehaviour {
 
 		// Set the grounded bool to false
         grounded = false;
+    }
+
+    void footStep()
+    {
+        if (rigid.velocity.magnitude > 0.1f && timeLeft == 0.5f)
+        {
+            audioSource.pitch = Random.Range(minPitch, maxPitch);
+            audioSource.Play();
+            timeLeft = 0.0f;
+        }
     }
 }
