@@ -8,6 +8,7 @@ public class characterController : MonoBehaviour {
     public int jumpSpeed;
     public bool grounded = true;
 
+    public float timeBetween = 0.5f;
     public AudioSource audioSource;
     public AudioClip clip;
     public float minPitch = 0.8f;
@@ -55,7 +56,7 @@ public class characterController : MonoBehaviour {
 
         // Move the player around the scene.
         Move(h);
-
+        
         // Make footstep sounds
 
         footStep();
@@ -98,7 +99,7 @@ public class characterController : MonoBehaviour {
 
     void footStep()
     {
-        if (rigid.velocity.magnitude > 0.1f && timeLeft == 0.5f)
+        if (rigid.velocity.magnitude > 0.1f && timeLeft >= timeBetween && grounded)
         {
             audioSource.pitch = Random.Range(minPitch, maxPitch);
             audioSource.Play();
