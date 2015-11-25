@@ -41,6 +41,8 @@ public class scoreManager : MonoBehaviour {
             // Sætter scoren på HUD'en når du dør
             dieScore.text = "Your score: " + score.ToString();
         }
-
+        /*
+        Prøv lige, Jesper sider og spiser Pizza kebab i FF. Kæft hvor bliver jeg enlig sulten :( 
+         */
     }
 }
