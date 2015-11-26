@@ -102,3 +102,4 @@ $RECYCLE.BIN/
 #Custom
 *.log
 *~
+*/output_log.*
