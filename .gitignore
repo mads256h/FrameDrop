@@ -25,6 +25,8 @@ Library/assetDatabase3
 Library/expandedItems
 Library/guidmapper
 Library/CurrentLayout.*
+Build/
+Build/*
 
 
 AnnotationManager
