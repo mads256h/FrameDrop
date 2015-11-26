@@ -40,7 +40,7 @@ public class fpsManager : MonoBehaviour {
         if (Application.targetFrameRate > minimumFps && !lagSpike)
         {
             // Sets the targetFrameRate to startingFps - maxX
-            Application.targetFrameRate = (startingFps - (int)(scoreManager.maxX / 2));
+            Application.targetFrameRate = (startingFps - (int)(scoreManager.maxX));
         }
 
         // If "lagSpike" is true
@@ -83,5 +83,6 @@ public class fpsManager : MonoBehaviour {
     {
 		// Set lagSpike to false
         lagSpike = false;
+	Application.targetFrameRate = (startingFps - (int)(scoreManager.maxX / 2));
     }
 }
