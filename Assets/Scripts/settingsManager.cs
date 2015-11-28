@@ -34,13 +34,16 @@ public class settingsManager : MonoBehaviour {
         {
             isGame = true;
             isMenu = false;
-            cam.orthographicSize = fov;
         }
     if (isMenu)
         {
             lagSpikeToggle.isOn = lagSpikeEnabled;
             frameDropToggle.isOn = frameDropEnabled;
             settingsCanvas.enabled = false;
+        }
+    if (isGame)
+        {
+            cam.orthographicSize = fov;
         }
 
 	}
@@ -73,6 +76,7 @@ public class settingsManager : MonoBehaviour {
             }
         }
         getFov = fov;
+
 	}
 
     public void EnableSettings()

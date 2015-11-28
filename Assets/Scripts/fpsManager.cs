@@ -22,13 +22,13 @@ public class fpsManager : MonoBehaviour {
 
     void Start ()
     {
-        Application.targetFrameRate = 300;
+        Application.targetFrameRate = startingFps;
     }
 	// Update is called once per frame
 	void FixedUpdate () {
 
         // Generate a random number, if the random number is 0 then Lagspike
-        if ((Random.Range(0, lagSpikeChance) == 0) && !lagSpike)
+        if ((Random.Range(0, lagSpikeChance) == 0) && !lagSpike && settingsManager.lagSpikeEnabled)
         {
             // Set the bool lagspike to true
             lagSpike = true;
@@ -38,7 +38,7 @@ public class fpsManager : MonoBehaviour {
         }
 
         // Check if targetFramerate is bigger than 1
-        if (Application.targetFrameRate > minimumFps && !lagSpike)
+        if (Application.targetFrameRate > minimumFps && !lagSpike && settingsManager.frameDropEnabled)
         {
 	    // Sets currentFps to startingFps - maxX
 	    currentFps = (startingFps - (int)(scoreManager.maxX));
