@@ -14,6 +14,8 @@ public class characterController : MonoBehaviour {
     public float minPitch = 0.8f;
     public float maxPitch = 1.2f;
 
+    public Animator anim;
+
     
     Vector3 movement;
     float timeLeft = 0;
