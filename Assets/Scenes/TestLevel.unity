@@ -158,6 +158,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 2.02999997}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &168603593 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 185278, guid: e3fcab6b1cd4a8847bd05d8866b9e4e7, type: 2}
+  m_PrefabInternal: {fileID: 298006310}
+--- !u!95 &168603599
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 168603593}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e4b4e4ea2c51184a9c476c22c4989c8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &249121036
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,7 +507,7 @@ GameObject:
   - 4: {fileID: 808291333}
   - 212: {fileID: 808291334}
   m_Layer: 0
-  m_Name: DudeIdle
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
