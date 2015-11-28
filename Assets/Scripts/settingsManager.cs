@@ -83,7 +83,6 @@ public class settingsManager : MonoBehaviour {
     {
         settingsCanvas.enabled = true;
         mainMenuCanvas.enabled = false;
-        Debug.Log("Trying to upen settings");
     }
 
     public void DisableSettings()
