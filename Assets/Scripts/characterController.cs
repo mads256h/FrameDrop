@@ -2,12 +2,13 @@
 using System.Collections;
 
 public class characterController : MonoBehaviour {
-
+    // Movement controls
     public Rigidbody rigid;
     public int Speed;
     public int jumpSpeed;
     public bool grounded = true;
 
+    // Footsteps
     public float timeBetween = 0.5f;
     public AudioSource audioSource;
     public AudioClip clip;
@@ -16,7 +17,10 @@ public class characterController : MonoBehaviour {
 
     public Animator anim;
 
-    
+    // Gun movement
+
+
+    // Misc.
     Vector3 movement;
     float timeLeft = 0;
 
