@@ -8,7 +8,7 @@ public class gunManager : MonoBehaviour {
 
     public string[] gunNames;
     public Sprite[] gunSprites;
-    public static bool[] gunUnlocked;
+    public bool[] gunUnlocked;
     public static int[] gunAmmo;
 
     int i = 0;
@@ -37,12 +37,26 @@ public class gunManager : MonoBehaviour {
             {
                 GunSwitch(false);
             }
+
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                GunSwitch(0);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                GunSwitch(1);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                GunSwitch(2);
+            }
         }
 	
 	}
 
     void GunSwitch (bool up)
     {
+        ChangeCursor();
         if (up && hasGun)
         {
             if (currentGun == 0 && gunUnlocked[0])
@@ -113,4 +127,10 @@ public class gunManager : MonoBehaviour {
             }
         }
     }
+
+    void ChangeCursor ()
+    {
+        mouseManager.mouseState = gunNames[ActiveGun];
+    }
+
 }

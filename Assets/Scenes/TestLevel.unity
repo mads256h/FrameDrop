@@ -1194,6 +1194,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 340369c923fbed7439372daad0347886, type: 3}
   - {fileID: 21300000, guid: 2b29f9ed258ceb442bada9fadf5d60af, type: 3}
   - {fileID: 21300000, guid: 609c14ec5447e4846908f143f6d64a2c, type: 3}
+  gunUnlocked: 010101
 --- !u!1 &1359428217
 GameObject:
   m_ObjectHideFlags: 0
