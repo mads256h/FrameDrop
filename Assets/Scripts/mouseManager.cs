@@ -20,7 +20,7 @@ public class mouseManager : MonoBehaviour {
     {
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray.direction, hit.transform.position, 50))
+        if (Physics.Raycast(ray, out hit, 50))
         {
             if (hit.transform.gameObject.tag == "cursorFollow")
             {
@@ -42,7 +42,6 @@ public class mouseManager : MonoBehaviour {
             case "none":
                 Cursor.visible = false;
                 cursorSprite.sprite = cursors[0];
-                Debug.Log("Now using none");
                 break;
 
             case "cursor":
