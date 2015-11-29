@@ -167,7 +167,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 226671394}
   - 212: {fileID: 226671393}
-  - 114: {fileID: 226671395}
   m_Layer: 0
   m_Name: Cursor
   m_TagString: Untagged
@@ -215,18 +214,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &226671395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 226671392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44b0e36ebd4304c4f9140147d495efe1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smooth: 1000
 --- !u!1 &249121036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,6 +1147,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 0}
   mainMenuCanvas: {fileID: 0}
   fovSlider: {fileID: 0}
+  fovSliderNumber: {fileID: 0}
   lagSpikeToggle: {fileID: 0}
   lagspikeToggleText: {fileID: 0}
   frameDropToggle: {fileID: 0}
@@ -1171,11 +1159,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1210583489}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7407368c65b1f44e870825e579778ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smooth: 2000
   cursor: {fileID: 226671394}
   cursorSprite: {fileID: 226671393}
   cursors:
