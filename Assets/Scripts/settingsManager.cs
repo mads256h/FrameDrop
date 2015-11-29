@@ -9,6 +9,7 @@ public class settingsManager : MonoBehaviour {
     public Canvas settingsCanvas;
     public Canvas mainMenuCanvas;
     public Slider fovSlider;
+    public InputField fovSliderNumber;
     public Toggle lagSpikeToggle;
     public Text lagspikeToggleText;
     public Toggle frameDropToggle;
@@ -40,7 +41,12 @@ public class settingsManager : MonoBehaviour {
             lagSpikeToggle.isOn = lagSpikeEnabled;
             frameDropToggle.isOn = frameDropEnabled;
             settingsCanvas.enabled = false;
-        }
+
+        //Adds a listener to the main slider and invokes a method when the value changes.
+        fovSlider.onValueChanged.AddListener(delegate { FovSliderUpdate(true); });
+
+            fovSliderNumber.onValueChange.AddListener(delegate { FovSliderUpdate(false); });
+}
     if (isGame)
         {
             cam.orthographicSize = fov;
@@ -79,6 +85,22 @@ public class settingsManager : MonoBehaviour {
 
 	}
 
+    void FovSliderUpdate(bool isSlider)
+    {
+        if (isSlider)
+        {
+            fovSliderNumber.text = fovSlider.value.ToString();
+        }
+        else
+        {
+            fovSlider.value = float.Parse(fovSliderNumber.text);
+        }
+    }
+
+    void FovInputGet(float arg0)
+    {
+
+    }
     public void EnableSettings()
     {
         settingsCanvas.enabled = true;

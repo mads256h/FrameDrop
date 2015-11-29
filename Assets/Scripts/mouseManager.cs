@@ -3,7 +3,7 @@ using System.Collections;
 
 public class mouseManager : MonoBehaviour {
 
-
+    public float smooth = 2000.0f;
     public Transform cursor;
     public SpriteRenderer cursorSprite;
 
@@ -11,13 +11,23 @@ public class mouseManager : MonoBehaviour {
     public Sprite blank;
     public static string mouseState = "none";
 
+    Ray ray;
+    RaycastHit hit;
+
+
 
     void Update()
     {
-        Vector3 mousePos = Input.mousePosition;
-        Vector3 objectPos = Camera.main.WorldToScreenPoint(new Vector3(mousePos.x, mousePos.y, -2));
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        cursor.position = objectPos;
+        if (Physics.Raycast(ray.direction, hit.transform.position, 50))
+        {
+            if (hit.transform.gameObject.tag == "cursorFollow")
+            {
+                Drag(hit);
+
+            }
+        }
     }
 	// FixedUpdate is called 60 times per secound
 	void FixedUpdate () {
@@ -57,4 +67,8 @@ public class mouseManager : MonoBehaviour {
         }
 	
 	}
+    void Drag(RaycastHit hit)
+    {
+        cursor.transform.position = Vector3.Lerp( cursor.transform.position, hit.point, Time.deltaTime * smooth);
+    }
 }
