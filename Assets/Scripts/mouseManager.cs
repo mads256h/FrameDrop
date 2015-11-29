@@ -59,6 +59,11 @@ public class mouseManager : MonoBehaviour {
                 cursorSprite.sprite = cursors[3];
                 break;
 
+            case "shotgun":
+                Cursor.visible = false;
+                cursorSprite.sprite = cursors[4];
+                break;
+
             default:
                 Cursor.visible = false;
                 cursorSprite.sprite = cursors[0];
