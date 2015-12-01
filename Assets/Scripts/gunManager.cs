@@ -8,14 +8,14 @@ public class gunManager : MonoBehaviour {
 
     public string[] gunNames;
     public Sprite[] gunSprites;
-    public bool[] gunUnlocked;
+    public static bool[] gunUnlocked;
     public static int[] gunAmmo;
 
-    int i = 0;
     int currentGun = 0;
 
 	// Use this for initialization
 	void Start () {
+        gunUnlocked = new bool[gunNames.Length];
         hasGun = true;
         gunUnlocked[0] = true;
         gunUnlocked[1] = true;
@@ -50,33 +50,34 @@ public class gunManager : MonoBehaviour {
             {
                 GunSwitch(2);
             }
+            ChangeCursor();
         }
 	
 	}
 
     void GunSwitch (bool up)
     {
-        ChangeCursor();
+        
         if (up && hasGun)
         {
             if (currentGun == 0 && gunUnlocked[0])
             {
                 ActiveGun = 0;
                 currentGun = 1;
-                Debug.Log("1");
+                //Debug.Log("1");
 
             }
             if (currentGun == 1 && gunUnlocked[1])
             {
                 ActiveGun = 1;
                 currentGun = 2;
-                Debug.Log("2");
+                //Debug.Log("2");
             }
             if (currentGun == 2 && gunUnlocked[2])
             {
                 ActiveGun = 2;
                 currentGun = 0;
-                Debug.Log("3");
+                //Debug.Log("3");
             }
 
         }
@@ -86,19 +87,19 @@ public class gunManager : MonoBehaviour {
             {
                 ActiveGun = 2;
                 currentGun = 2;
-                Debug.Log("3");
+                //Debug.Log("3");
             }
             if (currentGun == 1 && gunUnlocked[0])
             {
                 ActiveGun = 0;
                 currentGun = 0;
-                Debug.Log("1");
+                //Debug.Log("1");
             }
             if (currentGun == 2 && gunUnlocked[1])
             {
                 ActiveGun = 1;
                 currentGun = 1;
-                Debug.Log("2");
+                //Debug.Log("2");
             }
         }
     }
@@ -111,19 +112,19 @@ public class gunManager : MonoBehaviour {
             {
                 ActiveGun = 0;
                 currentGun = 0;
-                Debug.Log("1");
+                //Debug.Log("1");
             }
             if (gun == 1 && gunUnlocked[1])
             {
                 ActiveGun = 1;
                 currentGun = 1;
-                Debug.Log("2");
+               // Debug.Log("2");
             }
             if (gun == 2 && gunUnlocked[2])
             {
                 ActiveGun = 2;
                 currentGun = 2;
-                Debug.Log("3");
+                //Debug.Log("3");
             }
         }
     }

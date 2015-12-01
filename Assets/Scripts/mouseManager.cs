@@ -4,7 +4,7 @@ using System.Collections;
 public class mouseManager : MonoBehaviour {
 
     public float smooth = 2000.0f;
-    public Transform cursor;
+    public GameObject cursor;
     public SpriteRenderer cursorSprite;
 
     public Sprite[] cursors;
@@ -14,6 +14,10 @@ public class mouseManager : MonoBehaviour {
     Ray ray;
     RaycastHit hit;
 
+    void start()
+    {
+
+    }
 
 
     void Update()
