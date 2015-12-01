@@ -10,6 +10,9 @@ public class levelGenerator : MonoBehaviour {
     int currentPieces = 0;
     float timesSecoundFixed = 0;
 
+    int random = 0;
+    int timesSpawnedHazardeus = 0;
+
 
 	
 	// Fixed update function is called 60 times per secound
@@ -21,22 +24,52 @@ public class levelGenerator : MonoBehaviour {
 		// If currentPieces is not equal to NumberOfPieces and timesSecoundFixed is higher or equal to 60
         if (!(currentPieces == NumberOfPieces) && timesSecoundFixed >= 60)
         {
-			// Set current pieces one higher
-            currentPieces += 1;
-
-			// Make the prefab in the world
-            Instantiate(prefabs[Random.Range(0, prefabs.Length)], new Vector3(currentX, 0, 0), Quaternion.identity);
-
-            Instantiate(prefabs[Random.Range(0, prefabs.Length)], new Vector3(-currentX, 0, 0), Quaternion.identity);
-
-            // Set the currentX to itself plus 5
-            currentX += 5;
-
+            SpawnPrefabs();
 			// Reset the timesSecoundFixed
             timesSecoundFixed = 0;
 
 
         }
 
-	}
+
+    }
+    void SpawnPrefabs()
+    {
+        random = Random.Range(0, prefabs.Length);
+        if (prefabs[random].tag == "Death")
+        {
+            timesSpawnedHazardeus += 1;
+            if (timesSpawnedHazardeus >= 2)
+            {
+                SpawnPrefabs();
+                timesSpawnedHazardeus = 0;
+            }
+            else
+            {
+                currentPieces += 1;
+                // Make the prefab in the world
+                Instantiate(prefabs[random], new Vector3(currentX, 0, 0), Quaternion.identity);
+
+                Instantiate(prefabs[random], new Vector3(-currentX, 0, 0), Quaternion.identity);
+
+                // Set the currentX to itself plus 5
+                currentX += 5;
+                timesSpawnedHazardeus = 0;
+            }
+
+        
+        }
+        else
+        {
+            currentPieces += 1;
+            // Make the prefab in the world
+            Instantiate(prefabs[random], new Vector3(currentX, 0, 0), Quaternion.identity);
+
+            Instantiate(prefabs[random], new Vector3(-currentX, 0, 0), Quaternion.identity);
+
+            // Set the currentX to itself plus 5
+            currentX += 5;
+            timesSpawnedHazardeus = 0;
+        }
+    }
 }
