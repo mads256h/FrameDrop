@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21236724}
   - 65: {fileID: 6513956}
   - 54: {fileID: 5487632}
+  - 114: {fileID: 11411016}
   m_Layer: 2
   m_Name: Bullet
   m_TagString: Bullet
@@ -118,6 +119,20 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!114 &11411016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c38cad5e6afe1a4a81adb3c509f7b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpeed: 1000
+  bulletDamage: 25
+  bulletAliveTime: 8
 --- !u!212 &21236724
 SpriteRenderer:
   m_ObjectHideFlags: 1
