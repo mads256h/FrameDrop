@@ -16,6 +16,7 @@ public class gunManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         gunUnlocked = new bool[gunNames.Length];
+        gunAmmo = new int[gunNames.Length];
         hasGun = true;
         gunUnlocked[0] = true;
         gunUnlocked[1] = true;
