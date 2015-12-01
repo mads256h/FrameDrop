@@ -5,7 +5,9 @@ public class enemyController : MonoBehaviour {
 
     public Rigidbody enemy;
     public int speed = 100;
+    public int startingHealth = 100;
 
+    int Health = 0;
     bool right = false;
     Vector3 movement;
     
@@ -54,6 +56,15 @@ public class enemyController : MonoBehaviour {
 
             // Move the player to it's current position plus the movement.
             enemy.AddForce(transform.right * h * speed * Time.deltaTime);
+        }
+    }
+
+    public void takeDamage(int damage)
+    {
+        Health -= damage;
+        if (Health <= 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 }
