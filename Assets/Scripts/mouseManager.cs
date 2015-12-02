@@ -4,6 +4,7 @@ using System.Collections;
 public class mouseManager : MonoBehaviour {
 
     public float smooth = 2000.0f;
+    public LayerMask layer;
     public GameObject cursor;
     public SpriteRenderer cursorSprite;
 
@@ -14,17 +15,13 @@ public class mouseManager : MonoBehaviour {
     Ray ray;
     RaycastHit hit;
 
-    void start()
-    {
-
-    }
 
 
     void Update()
     {
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, 50))
+        if (Physics.Raycast(ray, out hit, 50, layer))
         {
             if (hit.transform.gameObject.tag == "cursorFollow")
             {

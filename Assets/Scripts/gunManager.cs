@@ -4,7 +4,7 @@ using System.Collections;
 public class gunManager : MonoBehaviour {
 
     public static bool hasGun = false;
-    public static int ActiveGun = 0;
+    public static int ActiveGun = -1;
 
     public string[] gunNames;
     public Sprite[] gunSprites;
@@ -58,7 +58,8 @@ public class gunManager : MonoBehaviour {
 
     void GunSwitch (bool up)
     {
-        
+        ActiveGun = 0;
+
         if (up && hasGun)
         {
             if (currentGun == 0 && gunUnlocked[0])
