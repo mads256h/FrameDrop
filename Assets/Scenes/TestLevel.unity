@@ -940,6 +940,7 @@ GameObject:
   - 114: {fileID: 1210583498}
   - 114: {fileID: 1210583499}
   - 114: {fileID: 1210583500}
+  - 114: {fileID: 1210583501}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -1194,6 +1195,19 @@ MonoBehaviour:
   - {fileID: 116370, guid: 7fcb4669b8892794d9364565101166f9, type: 2}
   machinegunRandomAngleMin: -5
   machinegunRandomAngleMax: 5
+--- !u!114 &1210583501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210583489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e64078b6b670b49b43d5fccfd30eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorAmmoObject: {fileID: 0}
+  gunAmmoSprites: []
 --- !u!1 &1359428217
 GameObject:
   m_ObjectHideFlags: 0

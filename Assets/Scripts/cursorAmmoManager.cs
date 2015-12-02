@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class courserAmmoManager : MonoBehaviour {
+public class cursorAmmoManager : MonoBehaviour {
 
-    public SpriteRenderer courserAmmoObject;
+    public SpriteRenderer cursorAmmoObject;
     public Sprite[] gunAmmoSprites;
 
 
@@ -11,7 +11,7 @@ public class courserAmmoManager : MonoBehaviour {
 	void FixedUpdate () {
 	if (gunManager.ActiveGun != -1)
         {
-            courserAmmoObject.sprite = gunAmmoSprites[gunManager.ActiveGun];
+            cursorAmmoObject.sprite = gunAmmoSprites[gunManager.ActiveGun];
         }
 	}
 }
