@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c38cad5e6afe1a4a81adb3c509f7b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 2000
+  bulletSpeed: 5000
   bulletDamage: 25
   bulletAliveTime: 8
 --- !u!212 &21236724
@@ -109,7 +109,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: bulletSpeed
-      value: 2000
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.x

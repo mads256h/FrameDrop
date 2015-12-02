@@ -37,23 +37,8 @@ public class bulletManager : MonoBehaviour {
     void Move()
     {
 
+        rigid.velocity = transform.right * bulletSpeed * Time.deltaTime;
 
-        // if the player is moving under the max speed or going backwards
-        if (rigid.velocity.magnitude < bulletSpeed / 100)
-        {
-
-            // Set the movement vector based on the axis input.
-            movement.Set(1, 0f, 0f);
-
-            // Normalise the movement vector and make it proportional to the speed per second.
-            movement = movement.normalized * bulletSpeed * Time.deltaTime;
-
-
-            // Move the player to it's current position plus the movement.
-            rigid.AddRelativeForce(transform.right * 1 * bulletSpeed * Time.deltaTime);
-
-            // Add angle code here
-        }
     }
 
     void RemoveObject()

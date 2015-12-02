@@ -13,33 +13,33 @@ public class shootingManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        if (gunManager.hasGun && gunManager.gunAmmo[gunManager.ActiveGun] >= 0)
+        if (gunManager.ActiveGun != -1)
         {
-            switch (gunManager.ActiveGun)
+            if (gunManager.hasGun && gunManager.gunAmmo[gunManager.ActiveGun] >= 0)
             {
-                case 0:
-                    {
-                        if (Input.GetKeyDown(KeyCode.Mouse0))
-                        ShootPistol();
-                        break;
-                    }
-                case 1:
-                    {
-                        if (Input.GetKey(KeyCode.Mouse0))
-                            ShootMachingun();
-                        break;
-                    }
-                case 2:
-                    {
-                        if (Input.GetKeyDown(KeyCode.Mouse0))
-                            ShootShotgun();
-                        break;
-                    }
+                switch (gunManager.ActiveGun)
+                {
+                    case 0:
+                        {
+                            if (Input.GetKeyDown(KeyCode.Mouse0))
+                                ShootPistol();
+                            break;
+                        }
+                    case 1:
+                        {
+                            if (Input.GetKey(KeyCode.Mouse0))
+                                ShootMachingun();
+                            break;
+                        }
+                    case 2:
+                        {
+                            if (Input.GetKeyDown(KeyCode.Mouse0))
+                                ShootShotgun();
+                            break;
+                        }
+                }
             }
-        }
-        else
-        {
+
         }
 	
 	}
