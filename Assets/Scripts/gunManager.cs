@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class gunManager : MonoBehaviour {
+    public SpriteRenderer gunObject;
 
     public static bool hasGun = false;
     public static int ActiveGun = -1;
@@ -21,6 +22,9 @@ public class gunManager : MonoBehaviour {
         gunUnlocked[0] = true;
         gunUnlocked[1] = true;
         gunUnlocked[2] = true;
+        gunAmmo[0] = 999;
+        gunAmmo[1] = 999;
+        gunAmmo[2] = 999;
 
         Debug.LogError("ALL GUNS ARE ENABLED (DEBUG)");
 
@@ -53,13 +57,16 @@ public class gunManager : MonoBehaviour {
             }
             ChangeCursor();
         }
-	
-	}
+        if (ActiveGun != -1)
+        gunObject.sprite = gunSprites[ActiveGun];
+
+    }
 
     void GunSwitch (bool up)
     {
         ActiveGun = 0;
 
+        
         if (up && hasGun)
         {
             if (currentGun == 0 && gunUnlocked[0])
@@ -133,6 +140,7 @@ public class gunManager : MonoBehaviour {
 
     void ChangeCursor ()
     {
+        if (ActiveGun != -1)
         mouseManager.mouseState = gunNames[ActiveGun];
     }
 
