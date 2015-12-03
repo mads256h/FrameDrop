@@ -11,12 +11,14 @@ public class dieScript : MonoBehaviour {
     public static bool Activate = false;
 
     // Fixed update is called 60 times every secound
-    void FixedUpdate() {
+    void LateUpdate() {
 
 		// if the players position is under -3 and is not activated or activate is true
         if (player.position.y <= -4 && !isActivated || Activate)
 		{
-			// Enable the panel
+
+            Cursor.visible = true;
+            // Enable the panel
             panel.SetActive(true);
 
 			// Set the trigger Die

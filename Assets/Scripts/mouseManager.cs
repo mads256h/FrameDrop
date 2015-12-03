@@ -72,6 +72,11 @@ public class mouseManager : MonoBehaviour {
         }
 	
 	}
+
+    public void setCursorBlank()
+    {
+        cursorSprite.sprite = blank;
+    }
     void Drag(RaycastHit hit)
     {
         cursor.transform.position = Vector3.Lerp( cursor.transform.position, hit.point, Time.deltaTime * smooth);

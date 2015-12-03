@@ -1201,13 +1201,16 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1210583489}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85e64078b6b670b49b43d5fccfd30eb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cursorAmmoObject: {fileID: 0}
-  gunAmmoSprites: []
+  gunAmmoSprites:
+  - {fileID: 21300000, guid: 2ef75fd9c175042409aced3a1ec70133, type: 3}
+  - {fileID: 21300000, guid: 0bc1d916d3b91444b8127d74516a6d0f, type: 3}
+  - {fileID: 21300000, guid: 20ec1d659e2d4e94595fd955dd94effc, type: 3}
 --- !u!1 &1359428217
 GameObject:
   m_ObjectHideFlags: 0
