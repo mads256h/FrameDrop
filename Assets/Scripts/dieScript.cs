@@ -10,6 +10,10 @@ public class dieScript : MonoBehaviour {
     public static bool isActivated = false;
     public static bool Activate = false;
 
+    void Start()
+    {
+        Time.timeScale = 1;
+    }
     // Fixed update is called 60 times every secound
     void LateUpdate() {
 

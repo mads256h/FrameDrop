@@ -15,7 +15,11 @@ public class mouseManager : MonoBehaviour {
     Ray ray;
     RaycastHit hit;
 
-
+    void Start()
+    {
+        Cursor.visible = false;
+        mouseState = "none";
+    }
 
     void Update()
     {
