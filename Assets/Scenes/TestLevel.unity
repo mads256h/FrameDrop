@@ -1080,6 +1080,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b0f1bba1e59a41744a602aedd41fa8b9, type: 3}
   - {fileID: 8300000, guid: 5641cef032a101840a83a85c03e67a86, type: 3}
   - {fileID: 8300000, guid: 973c3f894b21d414caddae11cc25ef85, type: 3}
+  - {fileID: 8300000, guid: 74c3290d64217f64b9efbc3733c77f6c, type: 3}
   playNext: 0
   waitSecounds: 0
 --- !u!114 &1210583495

@@ -14,12 +14,15 @@ public class settingsManager : MonoBehaviour {
     public Text lagspikeToggleText;
     public Toggle frameDropToggle;
     public Text frameDropToggleText;
+    public Toggle muteMusicToggle;
+    public Text muteMusicToggleText;
 
     public float getFov = 0.0f;
 
     public static float fov = 5.0f;
     public static bool lagSpikeEnabled = true;
     public static bool frameDropEnabled = true;
+    public static bool muteMusicEnabled = true;
 
     bool isMenu = false;
     bool isGame = false;
@@ -61,7 +64,7 @@ public class settingsManager : MonoBehaviour {
             fov = fovSlider.value;
             lagSpikeEnabled = lagSpikeToggle.isOn;
             frameDropEnabled = frameDropToggle.isOn;
-            
+            muteMusicEnabled = muteMusicToggle.isOn;
 
             if (lagSpikeToggle.isOn)
             {
@@ -79,6 +82,14 @@ public class settingsManager : MonoBehaviour {
             else
             {
                 frameDropToggleText.text = "Disabled";
+            }
+            if (muteMusicToggle.isOn)
+            {
+                muteMusicToggleText.text = "Enabled";
+            }
+            else
+            {
+                muteMusicToggleText.text = "Disabled";
             }
         }
         getFov = fov;

@@ -55,6 +55,7 @@ public class musicManager : MonoBehaviour {
 
     void StartSound()
     {
+        if (settingsManager.muteMusicEnabled)
         // if bool playNext is true
         if (playNext)
         {
@@ -65,6 +66,7 @@ public class musicManager : MonoBehaviour {
         {
             //Instead of random song
             playRandomSong();
+        
         }
     }
 }

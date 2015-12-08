@@ -43,6 +43,10 @@ public class levelGenerator : MonoBehaviour {
             {
                 SpawnPrefabs();
                 timesSpawnedHazardeus = 0;
+                Instantiate(prefabs[0], new Vector3(currentX, 0, 0), Quaternion.identity);
+
+                Instantiate(prefabs[0], new Vector3(-currentX, 0, 0), Quaternion.identity);
+                currentX += 5;
             }
             else
             {
