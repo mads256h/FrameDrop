@@ -41,7 +41,7 @@ public class fpsManager : MonoBehaviour {
         if (Application.targetFrameRate > minimumFps && !lagSpike && settingsManager.frameDropEnabled)
         {
 	    // Sets currentFps to startingFps - maxX
-	    currentFps = (startingFps - (int)(scoreManager.maxX));
+	    currentFps = (startingFps - (int)((scoreManager.maxX) / 3));
             
 	    // Sets the targetFrameRate to currentFps
             Application.targetFrameRate = currentFps;
