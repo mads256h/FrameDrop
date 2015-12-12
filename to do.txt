@@ -1,3 +1,4 @@
-Lav en mute musik knap mkay madz?
-Add et fedt script der afspiller de der lydr når man dør ;^)!
-
+Animations script
+Flere commits til Petter
+Tilføj de fucking enemies
+Slå Mads i hovdet
