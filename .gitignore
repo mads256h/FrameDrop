@@ -103,3 +103,4 @@ $RECYCLE.BIN/
 *.log
 *~
 */output_log.*
+Builds/Windows/FrameDrop_Data/output_log.txt
